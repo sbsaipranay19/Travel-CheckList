@@ -1,0 +1,533 @@
+body {
+    background-image: url("../media/form-bg.png");
+    margin: 0;
+}
+.per{
+    text-decoration: none;
+    color: #8f9296;
+}
+
+/*header*/
+header {
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(41, 33, 33, 0.15);
+    height: 130px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .logo span {
+        display: block;
+        width: 80px;
+        height: 80px;
+        background-image: url("../media/logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 20px 30px 0;
+				}
+				
+    .header nav li:not(.active) {
+        display: none;
+				}
+				
+    .header nav li a {
+        color: #fafafa;
+        padding: 5px 10px;
+    }
+}
+
+/*Form*/
+#trip-form__container,#todolist {
+    -webkit-box-shadow: 10px 10px 15px 3px rgba(0,0,0,0.42);
+    -moz-box-shadow: 10px 10px 15px 3px rgba(0,0,0,0.42);
+    box-shadow: 10px 10px 15px 3px rgba(0,0,0,0.42);
+    border-radius: 10px;
+    width: 50%;
+    background: #000;
+    opacity: 0.8;
+    color: #fff;
+    margin: 30px auto;
+    padding: 20px 30px;
+}
+#todolist{
+    opacity: 1;
+}
+.trip-text__container {
+    text-align: center;
+    font-size: 150%;
+}
+
+.end,
+.start,
+.trip-form__location {
+    width: 100%;
+    height: 80px;
+    padding: 5px 10px;
+    color: #fafafa;
+}
+
+#city,
+#endDate,
+#startDate,
+#taskInput,
+#taskPriority {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.submit-button {
+    padding: 7px 10px;
+    text-align: center;
+}
+
+.submit {
+    width: 45%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 25px;
+    background: #162447;
+
+    .submit:hover {
+        background: #1f4068;
+    }
+}
+
+/*footer*/
+.footer-distributed {
+    background: #000;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: left;
+    padding: 50px 60px 0;
+    overflow: hidden;
+    opacity: 0.9;
+}
+
+/* Footer left */
+.footer-distributed .footer-left {
+    float: left;
+}
+
+/* The company logo */
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Roboto', cursive;
+    margin: 0 0 10px;
+}
+
+.footer-distributed h3 span {
+    color: #5383d3;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons {
+    margin-top: 40px;
+    padding: 3px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin: 0 3px 5px;
+}
+
+.footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Right */
+.footer-distributed .footer-right {
+    float: right;
+}
+
+.footer-distributed .footer-right p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 42px 0 0;
+    color: #ffffff;
+}
+
+/* The contact form */
+.footer-distributed form {
+    display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea {
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color: #d1d2d2;
+    width: 400px;
+    padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+    color: #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+    color: #5c666b;
+    opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder {
+    color: #5c666b;
+}
+
+.footer-distributed form input {
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.footer-distributed form textarea {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
+				}
+				
+    .footer-distributed .footer-company-name {
+        font-size: 12px;
+    }
+
+    .footer-distributed form input,
+    .footer-distributed form textarea {
+        width: 250px;
+    }
+
+    .footer-distributed form button {
+        padding: 10px 35px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-distributed {
+        padding: 30px;
+    
+
+     .footer-left,
+     .footer-right {
+        float: none;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+     .footer-left {
+        margin-bottom: 40px;
+    }
+
+     form {
+								margin-top: 30px;
+								display: block;
+    }
+
+     form button {
+        float: none;
+				}
+			}
+}
+
+/*trips */
+#new-trip {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fefefe;
+    width: 90vh;
+    border-radius: 2%;
+    text-align: center;
+    padding: 2%;
+    margin: 15vh auto;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+    #new-trip {
+        width: 96vw;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+    #new-trip {
+        font-size: 1.8em;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    #new-trip {
+        width: auto;
+    }
+}
+
+#new-trip .headline {
+    font-weight: bold;
+    font-size: 3em;
+    color: #fff;
+}
+
+#new-trip .description {
+    margin-top: 1vh;
+    font-size: 2em;
+}
+
+/* Trips List*/
+#trips, #todolist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+				margin-top: 3vh;
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+    #trips {
+        font-size: 1.5em;
+    }
+}
+
+#trips h1, #todolist {
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #fefefe;
+    background: rgba(0, 0, 0, 0.8);
+
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.trip-img {
+    opacity: 1 !important;
+}
+
+#trips__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 8vh;
+    justify-content: space-evenly;
+				text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    #trips__container {
+        margin-top: 0;
+        width: auto;
+        height: auto;
+    }
+}
+
+#trips__container #no-trips__message {
+    margin-top: 6vh;
+    font-size: 1em;
+    font-style: italic;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.trip__card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40%;
+    margin: 6vh 3vh;
+    padding: 15px;
+    border-radius: 10px;
+				background-color: rgba(0, 0, 0, 0.8);
+    color: #fefefe;
+}
+
+@media screen and (max-width: 650px) {
+    .trip__card {
+        margin-top: 6vh;
+    }
+    .submit {
+        padding: 4px;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+    .trip__card {
+        margin-top: 6vh;
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+    .trip__card {
+        margin: 4vh;
+    }
+}
+
+.trip-image {
+    width: 20vw;
+    height: 24vh;
+    border-radius: 25px;
+    opacity: 1 !important;
+}
+
+@media screen and (max-width: 800px) {
+    .trip-image {
+        width: 45vw;
+        height: 20vh;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .trip-image {
+        height: 25vh;
+        width: 40vw;
+    }
+}
+
+.trip-description__container {
+    display: flex;
+    font-size: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5vh;
+}
+
+.trip-description__container p {
+    margin-top: 1vh;
+}
+
+.trip-weather__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+}
+
+.trip-weather__container h2 {
+    font-weight: bold;
+    color: #162447;
+}
+
+.weather-icon {
+    height: 4vh;
+    width: 2vw;
+}
+
+@media screen and (max-width: 650px) {
+    .weather-icon {
+        height: 5vh;
+        width: 8vw;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+    .weather-icon {
+        height: 6vh;
+        width: 6vw;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .weather-icon {
+        height: 6vh;
+        width: 4vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .weather-icon {
+        height: 8vh;
+        width: 4vw;
+    }
+}
+
+.card-button {
+    margin-top: 2vh;
+    font-size: 1em;
+}
+
+.remove-button {
+    width: 19vh;
+    height: 6vh;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+    background: #162447;
+    border: 1px solid #fff;
+}
+.remove-button:hover {
+    background: #1f4068;
+}
+
+.add-button , #addTaskButton,#removeFinishedTasksButton {
+    width: 19vh;
+    height: 6vh;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+    background: #162447;
+    border: 1px solid #fff;
+}
+.add-button:hover {
+    background: #1f4068;
+}
+
+.send {
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+    background: #162447;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    float: right;
+}
+
+.send:hover {
+    background: #1f4068;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
